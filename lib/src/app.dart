@@ -8,11 +8,11 @@ class CoffeeShopApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: coffeeAppTheme,
-      home: const SafeArea(
-        child: MenuScreen()
-      )
-    );
+        debugShowCheckedModeBanner: false,
+        theme: coffeeAppTheme,
+        home: Container(
+          color: coffeeAppTheme.colorScheme.background,
+          child: const SafeArea(child: MenuScreen()),
+        ));
   }
 }
